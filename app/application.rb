@@ -1,6 +1,7 @@
 class Application
 
   @@items = ["Apples","Carrots","Pears"]
+  @@cart = items
 
   def call(env)
     resp = Rack::Response.new
@@ -27,7 +28,4 @@ class Application
       return "Couldn't find #{search_term}"
     end
   end
-end
-
-class Cart
 end
