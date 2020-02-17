@@ -28,3 +28,7 @@ class Application
     end
   end
 end
+
+class Cart
+end
+
